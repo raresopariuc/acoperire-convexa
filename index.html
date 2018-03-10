@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src = "cod.js"></script>
+</head>
+<body>
+	<canvas id = "cerc" width = "1280" height = "720" style = "border: 1px solid black;">
+	</canvas>
+
+	<fieldset id = "adaugarePunct">
+		<legend>Adăugare cerc</legend>
+		x = <input id = "coordonataX" type="text" name="coordonataX" onkeypress="apasareEnter(event, this, 'punct')">
+		<br>
+		y = <input id = "coordonataY" type="text" name="coordonataY" onkeypress="apasareEnter(event, this, 'punct')">
+		<button id = "butonAdaugarePunct" onclick="adaugarePunct()">Adaugă cerc</button>
+	</fieldset>
+
+	<fieldset id = "adaugarePunctExtern">
+		<legend>Punct extern</legend>
+		x = <input id = "coordonataXextern" type="text" name="coordonataXextern" onkeypress="apasareEnter(event, this, 'punctExtern')">
+		<br>
+		y = <input id = "coordonataYextern" type="text" name="coordonataYextern" onkeypress="apasareEnter(event, this, 'punctExtern')">
+		<button id = "butonAdaugarePunctExtern" onclick="desenarePunctExtern()">Adaugă punct extern</button>
+	</fieldset>
+
+	<h1>Meniu</h1>
+
+	<button id = "butonDesenareAcoperireConvexa" style = "position: relative; display: block;" onclick="desenareAcoperireConvexa()">Desenare acoperire convexă</button>
+	<button id = "butonDesenareFrontiera" style = "position: relative; display: block;" onclick="desenareFrontiera()">Desenare frontieră</button>
+	<button id = "butonVerificarePunctExtern" style = "position: relative; display: block;" onclick="verificarePunctExtern()">Verificare punct extern</button>
+
+
+	<p id="detalii"></p>
+
+</body>
+</html>

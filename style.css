@@ -1,0 +1,73 @@
+#cerc {
+	position: relative;
+}
+
+body {
+	font-family: 'Quattrocento', serif;
+	font-weight: 400;
+}
+
+h1, p {
+	position: relative;
+	left: 1325px;
+	width: 300px;
+}
+
+p {
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+fieldset {
+	width: 160px;
+	left: 1325px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+legend {
+	text-align: center;
+}
+
+input {
+	width: 50%;
+}
+
+button {
+	left: 1325px;
+	position: relative;
+	display: block;
+	margin: 15px 0 15px 0;
+	font-family: 'Quattrocento', serif;
+	font-size: 15px;
+}
+
+fieldset > button {
+	left: 0;
+	margin: auto;
+	margin-top: 15px;
+}
+
+body > button {
+	width: 300px;
+}
+
+.punct {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+}
+
+#coordonate {
+	position: fixed;
+	width: auto;
+	height: auto;
+	font-size: 20px;
+	background-color: white;
+}
+
+#cerc {
+	z-index: 0;
+	position: absolute;
+}
